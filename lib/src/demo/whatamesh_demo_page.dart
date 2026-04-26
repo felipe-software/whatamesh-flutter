@@ -81,17 +81,10 @@ class _WhatameshDemoPageState extends State<WhatameshDemoPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'whatamesh / flutter',
+                    'felipe-software / whatamesh-flutter',
                     style: theme.textTheme.headlineMedium?.copyWith(
                       fontWeight: FontWeight.w300,
                       letterSpacing: 1.4,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-                    'Port 1:1 do renderer original em mesh + noise + color blending no Flutter.',
-                    style: theme.textTheme.bodyLarge?.copyWith(
-                      color: Colors.white70,
                     ),
                   ),
                   const SizedBox(height: 24),
