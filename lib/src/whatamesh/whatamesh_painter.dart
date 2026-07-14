@@ -89,9 +89,7 @@ class WhatameshPainter extends CustomPainter {
             time * deform.noiseSpeed + deform.noiseSeed,
           ) *
           deform.noiseAmp;
-      // vertexNoise *= 1 - math.pow(uvNormY.abs(), 2).toDouble();
-      // https://github.com/jordienr/whatamesh/issues/5
-      vertexNoise = smoothstep(0.0, 1.0, vertexNoise);
+      vertexNoise *= 1 - math.pow(uvNormY.abs(), 2).toDouble();
       vertexNoise = math.max(0, vertexNoise);
 
       final posY = tilt + incline + vertexNoise - offset;
